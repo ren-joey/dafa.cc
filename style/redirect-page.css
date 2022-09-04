@@ -1,0 +1,119 @@
+.wrapper {
+    margin-top: -80px;
+    min-height: 100vh;
+    background-image: url(../assets/images/bg_logo.jpg);
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        margin-top: 0;
+    }
+}
+
+.download-button {
+    position: relative;
+    display: block;
+    margin: 558px auto 0;
+    width: 349px;
+    height: 114px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/download_button_lg.png);
+    background-size: 100% 100%;
+    transition: 0.3s;
+}
+
+.download-button:hover {
+    transform: translateY(-5px);
+}
+
+.download-button__animation-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 15px;
+    overflow: hidden;
+    width: 319px;
+    height: 84px;
+    border-radius: 50px;
+    pointer-events: none;
+}
+
+.download-button__reflection {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.6) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    animation: left-to-right 3.5s linear infinite;
+}
+
+.halls {
+    margin: 120px auto 0;
+    width: 480px;
+    display: flex;
+    /* background-image: url(../assets/images/all_halls.png); */
+}
+
+@media (min-width: 557px) {
+    .halls {
+        width: 557px;
+    }
+}
+
+.hall {
+    flex: 1;
+    height: 112px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 150% auto;
+    animation-name: float;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.sport {
+    background-image: url(../assets/images/sport.png);
+    animation-delay: 0s;
+}
+
+.casino {
+    background-image: url(../assets/images/casino.png);
+    animation-delay: 0.1s;
+}
+
+.live {
+    background-image: url(../assets/images/live.png);
+    animation-delay: 0.2s;
+}
+
+.fish {
+    background-image: url(../assets/images/fish.png);
+    animation-delay: 0.3s;
+}
+
+.lottery {
+    background-image: url(../assets/images/lottery.png);
+    animation-delay: 0.4s;
+}
+
+.card {
+    background-image: url(../assets/images/card.png);
+    animation-delay: 0.5s;
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(-160px) skewX(45deg);
+    }
+
+    30%,
+    100% {
+        transform: translateX(320px) skewX(-45deg);
+    }
+}

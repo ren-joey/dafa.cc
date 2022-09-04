@@ -1,0 +1,173 @@
+.wrapper {
+    min-height: 100vh;
+    background-image: url(../assets/images/bg_no_logo.jpg);
+}
+
+.logo {
+    margin: 20px auto 0;
+    width: 186px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/logo.png);
+    background-size: 100% 100%;
+}
+
+.title {
+    margin: 10px auto 0;
+    width: 369px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/title.png);
+    background-size: 100% 100%;
+}
+
+.athelete {
+    margin-top: 40px;
+    margin-left: auto;
+    width: 420px;
+    height: 489px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/athelete.png);
+    background-size: 445px auto;
+}
+
+@media (min-width: 520px) {
+    .athelete {
+        margin-left: 60px;
+        width: 445px;
+    }
+}
+
+.download-button {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    width: 212px;
+    height: 62px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/download_button.png);
+    background-size: 100% 100%;
+    transition: 0.3s transform;
+}
+
+.download-button:hover {
+    transform: translateY(-5px);
+}
+
+.download-button__animation-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 212px;
+    height: 62px;
+    border-radius: 50px;
+    pointer-events: none;
+}
+
+.download-button__reflection {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.6) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    animation: left-to-right 3.5s linear infinite;
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(-110px) skewX(45deg);
+    }
+
+    30%,
+    100% {
+        transform: translateX(220px) skewX(-45deg);
+    }
+}
+
+.halls {
+    margin: 20px auto 0;
+    width: 400px;
+    display: flex;
+    /* background-image: url(../assets/images/all_halls.png); */
+}
+
+.hall {
+    flex: 1;
+    height: 112px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 150% auto;
+    animation-name: float;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.sport {
+    background-image: url(../assets/images/sport.png);
+    animation-delay: 0s;
+}
+
+.casino {
+    background-image: url(../assets/images/casino.png);
+    animation-delay: 0.1s;
+}
+
+.live {
+    background-image: url(../assets/images/live.png);
+    animation-delay: 0.2s;
+}
+
+.fish {
+    background-image: url(../assets/images/fish.png);
+    animation-delay: 0.3s;
+}
+
+.lottery {
+    background-image: url(../assets/images/lottery.png);
+    animation-delay: 0.4s;
+}
+
+.card {
+    background-image: url(../assets/images/card.png);
+    animation-delay: 0.5s;
+}
+
+.slogan {
+    margin: 0 auto 50px;
+    width: 372px;
+    height: 39px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/slogan.png);
+    background-size: 100% 100%;
+}
+
+.ribbon {
+    margin-top: 180px;
+    width: 480px;
+    height: 365px;
+    background-position: 20px 0;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/ribbon.png);
+    background-size: 428px 365px;
+}
+
+.service-24h{
+    position: fixed;
+    display: block;
+    top: calc(50% - 57px);
+    right: 0;
+    width: 116px;
+    height: 114px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/service_24h.png);
+    background-size: 100% 100%;
+    transform: translateX(100%);
+    animation: slide-in-from-right 2s linear 1s forwards;
+}
